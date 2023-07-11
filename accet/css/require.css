@@ -1,0 +1,155 @@
+/*--------------------*\
+#require.css
+\*--------------------*/
+
+/**
+*copyright 2023 NoviaTech@mayowaZedek
+*/
+
+/**
+*table of content
+*
+*custorm properties.... .....Global Variables
+*Reset ....................  Removed browser default style
+*Typography................  Typography style
+*RE-used ....................Re-used classes
+*Preloader...................pre-load style
+*Header......................Header style
+*Footer......................Footer style 
+*Media queries...............Responsive for all devices
+*/
+
+/*--------------------*\
+#custom property
+\*--------------------*/
+:root{
+    /**
+    *colors
+    */
+    --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
+    --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
+    --maximum-yellow-red: hsl(41, 99%, 64%);
+    --orange-red_a20: hsla(41, 99%, 64%, 0.2);
+    --eerie-black: hsl(210, 11%, 15%);
+    --orange-red: hsl(19, 100%, 55%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --white_a80: hsla(0, 0%, 100%, 0.8);
+    --white_a75: hsla(0, 0%, 100%, 0.75);
+    --white_a10: hsla(0, 0%, 100%, 0.1);
+    --jet_a10: hsla(0, 0%, 22%, 0.1);
+    --black: hsl(0, 0%,0%);
+    --white: hsl(0, 0%,100%);
+    --jet: hsl(0, 0%,22%);
+
+    /**
+    *colors
+    */
+    --ff-jost: 'jost', sans-serif;
+
+    --fs-45: 4.5rem;
+    --fs-38: 3.8rem;
+    --fs-32: 3.2rem;
+    --fs-27: 2.7rem;
+    --fs-26: 2.6rem;
+    --fs-22: 2.2rem;
+    --fs-20: 2rem;
+    --fs-18: 1.8rem;
+    --fs-17: 1.7rem;
+    --fs-14: 1.4rem;
+    --fs-12: 1.2rem;
+
+    --fs-400: 400;
+    --fs-500: 500;
+    --fs-600: 600;
+
+    /**
+    *colors
+    */
+     --section-padding: 60px;
+
+     /**
+    *shadow
+    */
+
+    --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
+
+
+    /**
+    *border-radius
+    */
+
+    --radius-50: 50px;
+    --radius-pill: 100px;
+    --radius-circle: 50%;
+
+    /**
+    *transition
+    */
+    --transition-1:0.25s ease;
+    --transition-2:0.5s ease;
+    --cubic-out: cubic-bezier(0.05, .0.83, 0.52, 0.97);
+
+}
+/*--------------------*\
+#Reset
+\*--------------------*/
+*
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a,
+img,
+span,
+label,
+button,
+ion-icon{display: block;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    height: auto;
+}
+input,
+button,
+textarea{
+    background: none;
+    border: none;
+    font:inherit ;
+}
+button{
+    cursor: pointer;
+}
+
+input,
+    textarea{ width: 100%;}
+
+ion-icon{ pointer-events: none;}
+address{ font-style: normal;}
+
+html{
+    font-family: var(--ff-jost);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--white);
+    color: var(--davys-gray);
+    line-height: 1.5;
+    overflow: hidden;
+    height: 300vh ;
+}
+
+
+
+/*--------------------*\
+#Typography
+\*--------------------*/
