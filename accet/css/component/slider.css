@@ -1,0 +1,19 @@
+/*--------------------*\
+#main.css
+\*--------------------*/
+
+/**
+*copyright 2023 NoviaTech@mayowaZedek
+*/
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+}
+.slider-item{
+    scroll-snap-align: start;
+}

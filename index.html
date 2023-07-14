@@ -33,8 +33,233 @@
     <!-- preload Images -->
     <link rel="preload" href="./images/ging.png" />
   </head>
-  <body class="loaded">
-    <!-- custorm js link -->
+  <body>
+    <!--#Preloader     -->
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
+
+    <!--
+      - #Header
+    -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./Logos.svg" width="50" height="28" alt="my | Home"
+        /></a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a
+                href="#"
+                class="label-lg navbar-link has-after active"
+                data-nav-link
+                >Home</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="./service.html"
+                class="label-lg navbar-link has-after"
+                data-nav-link
+                >Service</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="./portfolio.html"
+                class="label-lg navbar-link has-after"
+                data-nav-link
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="./contact.html"
+                class="label-lg navbar-link has-after"
+                data-nav-link
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="./contact.html" class="btn btn-primary">Contact now</a>
+        <button
+          class="nav-toggle-button"
+          aria
+          aria-label="menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" aria hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--
+          - #Hero
+        -->
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-sbtitle">👏, My Name is Ade</p>
+
+              <h1 class="headline-lg">I'm a Developer</h1>
+              <p class="hero-text body-md">Based In Lagos, Nigeria.</p>
+              <a href="#" class="btn btn-primary">Let's start</a>
+            </div>
+            <figure class="hero-banner">
+              <img
+                src="./images/emi.png"
+                width="600"
+                height="645"
+                alt="my profile pic 1"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!--
+          - #Client
+        -->
+        <section class="client" aria-label="Trusted client">
+          <div class="container">
+            <ul class="slider">
+              <li class="slider-item">
+                <img
+                  src="./images/ayomide.jpg"
+                  width="130"
+                  height="40"
+                  alt="client"
+                  class="w-100"
+                />
+              </li>
+              <li class="slider-item">
+                <img
+                  src="./images/ayomide.jpg"
+                  width="130"
+                  height="40"
+                  alt="client"
+                  class="w-100"
+                />
+              </li>
+              <li class="slider-item">
+                <img
+                  src="./images/ayomide.jpg"
+                  width="130"
+                  height="40"
+                  alt="client"
+                  class="w-100"
+                />
+              </li>
+              <li class="slider-item">
+                <img
+                  src="./images/ayomide.jpg"
+                  width="130"
+                  height="40"
+                  alt="client"
+                  class="w-100"
+                />
+              </li>
+              <li class="slider-item">
+                <img
+                  src="./images/ayomide.jpg"
+                  width="130"
+                  height="40"
+                  alt="client"
+                  class="w-100"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--
+          - #About
+        -->
+        <section class="section about" aria-label="about me">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./images/ayomide.jpg"
+                width="580"
+                height="554"
+                loading="lazy"
+                alt="my picture on banner"
+                class="w-100"
+              />
+            </figure>
+            <div class="about-content">
+              <h2 class="title-lg">
+                I'm a Freelancer Front-end Developer & Technical Writer with
+                over 3 years of experience.
+              </h2>
+              <p class="body-md section-text">
+                I'm a Freelancer Front-end Developer with over 3 years of
+                experience. I'm from Lagos Nigeria. I code and create web
+                elements for amazing people around the world. I like work with
+                new people. New people New experience.
+              </p>
+              <ul class="about-list">
+                <li>
+                  <p class="list-text">
+                    <strong class="strong title-md">285+</strong>Project
+                    Completed
+                  </p>
+                </li>
+
+                <li>
+                  <p class="list-text">
+                    <strong class="strong title-md">190+</strong>Happy Client
+                  </p>
+                </li>
+              </ul>
+
+              <div class="wrapper">
+                <a href="./contact.html" class="btn btn-primary">Contact Me</a>
+
+                <a href="./portfolio.html" class="btn btn-secondary"
+                  >Portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - #Skill
+        -->
+        <section class="section skill" aria-labelledby="skill-label">
+          <div class="container">
+            <div class="skill-content">
+              <h2 class="section-title headline-md" id="skill-label">
+                My skills
+              </h2>
+              <ul class="skill-list">
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(177, 39%, 72%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+                    <h2 class="card-tile">HTML</h2>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- custom js link -->
     <script src="./accet/js/script.js"></script>
     <!-- ionicon -->
     <script
